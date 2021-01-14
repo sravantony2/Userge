@@ -6,7 +6,6 @@ covid
 cowpy
 dnspython
 emoji
-errno
 gitpython
 google-api-python-client
 google-auth-httplib2
@@ -16,8 +15,6 @@ hachoir
 heroku3
 html-telegraph-poster
 instaloader
-json
-mathprocessing
 motor
 natsort
 oauth2client
