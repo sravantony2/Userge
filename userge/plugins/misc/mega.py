@@ -37,7 +37,11 @@ from . import LOGS, time_formatter
 
 TMP_DOWNLOAD_DIRECTORY = Config.TMP_DOWNLOAD_DIRECTORY
 
-
+userge.on_cmd("mega", about={
+    'header': "Download files to server",
+    'usage': "{tr}download [url | reply to telegram media]",
+    'examples': "{tr}download https://speed.hetzner.de/100MB.bin | testing upload.bin"},
+    check_downpath=True)
 async def subprocess_run(megadl, cmd):
     subproc = await asyncSubprocess(cmd, stdout=asyncPIPE, stderr=asyncPIPE)
     stdout, stderr = await subproc.communicate()
